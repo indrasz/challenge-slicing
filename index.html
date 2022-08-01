@@ -18,14 +18,15 @@
 
 </head>
 
-<body >
+<body>
 
     <section class="w-100 h-100 header-section">
 
         <style>
-            body{
+            body {
                 background: #FAFAFA;
             }
+
             .header-section {
                 font-family: 'Poppins', sans-serif;
             }
@@ -39,10 +40,36 @@
                 background: #FFFFFF;
                 border-radius: 12px;
             }
+
+
+            .header-section .slider-hero {
+                overflow-x: auto;
+            }
+
+            .header-section .slider-hero::-webkit-scrollbar {
+                height: 0 !important;
+            }
+
+
+            .header-section .slider-hero .image-slider {
+                width: 1108px;
+                height: 564px;
+                border-radius: 24px;
+
+            }
+
+            .header-section .card {
+                background: #FFFFFF;
+                border-radius: 24px;
+                width: 350px;
+                height: 265px;
+                margin-top: -430px;
+                margin-left: -48px;
+            }
         </style>
 
-        <div class="navbar-main container position-relative">
-            <nav class="navbar navbar-expand-lg navbar-light py-5 px-md-5 px-3">
+        <div class="navbar-main container-fluid position-relative">
+            <nav class="navbar navbar-expand-lg navbar-light py-5 px-4">
 
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item me-4">
@@ -53,7 +80,7 @@
                         <a class="nav-link" href="#">Category</a>
                     </li>
 
-                    
+
                     <li class="nav-item me-4">
                         <a class="nav-link" href="#">Services</a>
                     </li>
@@ -78,11 +105,439 @@
             </nav>
         </div>
 
-        <div class="slider-hero">
+        <div class="slider-hero d-flex gap-4 mx-5 px-5 pb-5">
+            <div>
+                <img src="images/image-header-1.png" alt="image" class="image-slider ms-4">
 
+                <div class="card border-0 pe-5 ps-4">
+                    <div class="d-flex gap-2">
+                        <img src="images/icon-start.svg" alt="icon">
+                        <img src="images/icon-start.svg" alt="icon">
+                        <img src="images/icon-start.svg" alt="icon">
+                        <img src="images/icon-start.svg" alt="icon">
+                        <img src="images/icon-start.svg" alt="icon">
+                        <p class="pt-3">5.0 <span>(5.2K+)</span></p>
+                    </div>
+                    <h5>Padang Restaurant</h5>
+                    <h6>IDR 49.999 - IDR 560.000</h6>
+                    <div class="d-flex gap-2">
+                        <img src="images/icon-location.svg" alt="icon" height="25">
+                        <p class="">Padang, Indonesia</p>
+                    </div>
+
+                    <button class="btn btn-reservasion py-2 px-4 mt-3 me-auto bg-danger ">
+                        Make Reservasion >
+                    </button>
+
+                    <div class="d-flex gap-2 mt-2">
+                        <img src="images/icon-info.svg" alt="icon" height="25">
+                        <p>No extra cost</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="images/image-header-2.png" alt="image" class="image-slider ms-5">
+
+            </div>
         </div>
+    </section>
+
+    <section class="w-100 h-100 section-benefit py-5">
+        <style>
+            .section-benefit .btn-details.active {
+                background: #FDC886;
+                border-radius: 12px 12px 24px 24px;
+            }
+
+            .section-benefit .card {
+                border-radius: 24px;
+                height: 300px;
+            }
+        </style>
+        <div class="container">
+            <h6 class="text-center text-uppercase">Special Benefit for you</h6>
+            <h2 class="text-center mb-4">Why Should Choose Us?</h2>
+
+            <div class="row mt-4">
+                <div class="col-3 p-2">
+                    <div class="card text-center border-0 bg-white d-flex flex-column">
+                        <div class="bg-orange-secondary rounded-pill p-4">
+                            <img src="images/icon-discount.svg" alt="icon">
+                        </div>
+
+                        <div class="px-4 py-2">
+                            <h5>Extra Discount</h5>
+                            <h6 class="mt-2 mb-4">Get your special discount by using our reservation</h6>
+                        </div>
+                        <button class="btn btn-details active text-dark p-3 mt-auto">
+                            View Details >
+                        </button>
+                    </div>
+                </div>
+                <div class="col-3 p-2">
+                    <div class="card text-center border-0 bg-white d-flex flex-column">
+                        <div class="bg-orange-secondary rounded-pill p-4">
+                            <img src="images/icon-discount.svg" alt="icon">
+                        </div>
+
+                        <div class="px-4 py-2">
+                            <h5>Extra Discount</h5>
+                            <h6 class="mt-2 mb-4">Get your special discount by using our reservation</h6>
+                        </div>
+                        <button class="btn btn-details text-dark p-3 mt-auto">
+                            View Details >
+                        </button>
+                    </div>
+                </div>
+                <div class="col-3 p-2">
+                    <div class="card text-center border-0 bg-white d-flex flex-column">
+                        <div class="bg-orange-secondary rounded-pill p-4">
+                            <img src="images/icon-discount.svg" alt="icon">
+                        </div>
+
+                        <div class="px-4 py-2">
+                            <h5>Extra Discount</h5>
+                            <h6 class="mt-2 mb-4">Get your special discount by using our reservation</h6>
+                        </div>
+                        <button class="btn btn-details text-dark p-3 mt-auto">
+                            View Details >
+                        </button>
+                    </div>
+                </div>
+                <div class="col-3 p-2">
+                    <div class="card text-center border-0 bg-white d-flex flex-column">
+                        <div class="bg-orange-secondary rounded-pill p-4">
+                            <img src="images/icon-discount.svg" alt="icon">
+                        </div>
+
+                        <div class="px-4 py-2">
+                            <h5>Extra Discount</h5>
+                            <h6 class="mt-2 mb-4">Get your special discount by using our reservation</h6>
+                        </div>
+                        <button class="btn btn-details text-dark p-3 mt-auto">
+                            View Details >
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100 h-100 popular-section">
+        <style>
+            .popular-section .card-popular {
+                width: 400px;
+                height: 475px;
+                border-radius: 24px;
+            }
+
+            .popular-section .card-popular .card {
+
+                border-radius: 24px;
+            }
+
+            .popular-section .image-popular {
+                border-radius: 24px;
+                height: 475px;
+            }
+
+            .popular-section .bg-image-popular {
+                background-image: url('images/image-popular-1.png');
+                background-size: cover;
+            }
+        </style>
+        <div class="container py-5">
+            <div class="row py-3 align-items-center">
+                <div class="col-4">
+                    <h6 class="text-uppercase">Top 3 Featured Restaurant</h6>
+                    <h2>Most Popular Restaurants</h2>
+                    <p>The best restaurant in our opinion is how much customers like it in terms of place, price,
+                        comfort and of course the taste of
+                        the food itself.</p>
+                    <button class="btn btn-view-all py-2 px-3">
+                        View All Restaurant >
+                    </button>
+                </div>
+
+                <div class="col-4">
+                    <div class="card-popular bg-image-popular p-4 d-flex flex-column">
+                        <div class="card border-0 px-4 pt-4 mt-auto mb-2 ">
+                            <div class="d-flex gap-2 h-25">
+                                <img src="images/icon-start.svg" alt="icon" height="23">
+                                <p>5.0 <span>(7.6K+)</span></p>
+                            </div>
+                            <div class="d-flex h-25">
+                                <p>Bind Balorant</p>
+                                <span class="ms-auto">
+                                    <button class="btn p-1 bg-danger">
+                                        <img src="images/icon-arrow.svg" alt="icon">
+                                    </button>
+                                </span>
+                            </div>
+
+                            <div class="d-flex gap-2">
+                                <img src="images/icon-location.svg" alt="icon" height="25">
+                                <p>Jakarta, Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <img src="images/image-popular-2.png" alt="image" class="image-popular w-100">
+                </div>
+
+                <div class="col-2">
+                    <img src="images/image-popular-3.png" alt="image" class="image-popular w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100 h-100 section-restaurant-based">
+        <style>
+            .bg-grey {
+                background: #F2F2F2;
+            }
+
+            .section-restaurant-based .location-select {
+                border-radius: 12px;
+            }
+
+            .section-restaurant-based .card-restaurant {
+                width: 427px;
+                height: 415px;
+                border-radius: 24px;
+            }
+
+            .section-restaurant-based .card-restaurant.bg-image-restaurant {
+                background-image: url('images/image-restaurant-based-1.png');
+                background-size: cover;
+            }
+
+            .section-restaurant-based .card-restaurant .card {
+                border-radius: 24px;
+            }
+        </style>
+        <div class="container py-5">
+            <div class="d-flex justify-content-between">
+                <div class="title">
+                    <h6 class="text-uppercase">
+                        Restaurant Based By City
+                    </h6>
+                    <h4>
+                        Restaurant Near You
+                    </h4>
+                </div>
+                <div class="location ms-auto">
+                    <div class="d-flex gap-1 location-select bg-grey px-4 py-2">
+                        <img src="images/icon-location.svg" alt="icon">
+                        <select class="form-select border-0 bg-transparent" aria-label="Default select example">
+                            <option selected>Jakarta, Indonesia</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-4">
+                    <div class="card-restaurant bg-image-restaurant d-flex flex-column p-3">
+                        <div class="card border-0 px-4 pt-4 mt-auto">
+                            <div class="d-flex gap-2 h-25">
+                                <img src="images/icon-start.svg" alt="icon" height="23">
+                                <p>5.0 <span>(7.6K+)</span></p>
+                            </div>
+                            <div class="d-flex h-25">
+                                <p class="text-uppercase">Bind Balorant</p>
+                                <span class="ms-auto">
+                                    <button class="btn p-1 bg-danger">
+                                        <img src="images/icon-arrow.svg" alt="icon">
+                                    </button>
+                                </span>
+                            </div>
+
+                            <p class="text-uppercase">IDR 29.000 - IDR 259.999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card-restaurant bg-image-restaurant d-flex flex-column p-3">
+                        <div class="card border-0 px-4 pt-4 mt-auto">
+                            <div class="d-flex gap-2 h-25">
+                                <img src="images/icon-start.svg" alt="icon" height="23">
+                                <p>5.0 <span>(7.6K+)</span></p>
+                            </div>
+                            <div class="d-flex h-25">
+                                <p class="text-uppercase">Bind Balorant</p>
+                                <span class="ms-auto">
+                                    <button class="btn p-1 bg-danger">
+                                        <img src="images/icon-arrow.svg" alt="icon">
+                                    </button>
+                                </span>
+                            </div>
+
+                            <p class="text-uppercase">IDR 29.000 - IDR 259.999</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card-restaurant bg-image-restaurant d-flex flex-column p-3">
+                        <div class="card border-0 px-4 pt-4 mt-auto">
+                            <div class="d-flex gap-2 h-25">
+                                <img src="images/icon-start.svg" alt="icon" height="23">
+                                <p>5.0 <span>(7.6K+)</span></p>
+                            </div>
+                            <div class="d-flex h-25">
+                                <p class="text-uppercase">Bind Balorant</p>
+                                <span class="ms-auto">
+                                    <button class="btn p-1 bg-danger">
+                                        <img src="images/icon-arrow.svg" alt="icon">
+                                    </button>
+                                </span>
+                            </div>
+
+                            <p class="text-uppercase">IDR 29.000 - IDR 259.999</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <button class="btn btn-view px-4 py-2">
+                        View All Restaurant >
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-100 h-100 section-chef-expert">
+        <style>
+            .section-chef-expert .image-chef {
+                border-radius: 24px;
+                width: auto;
+                height: 848px;
+                margin-top: -50px;
+            }
+
+            .section-chef-expert .card {
+                width: 179px;
+                box-shadow: 8px 8px 25px rgba(102, 102, 102, 0.04);
+                border-radius: 24px;
+
+                margin-bottom: -250px;
+                margin-right: -65px;
+            }
+
+            .section-chef-expert .card-restaurant-chef {
 
 
+                margin-top: -250px;
+                margin-left: -65px;
+            }
+
+            .section-chef-expert .card-restaurant-chef .content {
+                width: 300px;
+                box-shadow: 8px 8px 25px rgba(102, 102, 102, 0.04);
+                border-radius: 24px;
+                background: #FFFFFF;
+
+            }
+
+            .section-chef-expert .card-restaurant-chef .content .image-restaurat-chef {
+                border-radius: 12px;
+            }
+
+            .section-chef-expert .card-profile.active {
+                background: #FFFFFF;
+                border-radius: 24px;
+            }
+
+            .section-chef-expert .card-profileB img {
+                filter: brightness(0%);
+            }
+
+            .section-chef-expert .card-profile {
+                background: transparent;
+                border-radius: 24px;
+            }
+        </style>
+        <div class="container py-5 mt-5">
+            <div class="row p-4">
+                <div class="col-6 px-5">
+                    <div class="card text-center border-0 p-4 float-end position-relative">
+                        <div class="bg-icon p-4">
+                            <img src="images/icon-experience.svg" alt="icon">
+                        </div>
+                        <h5>12 Years</h5>
+                        <h6>Experience</h6>
+                    </div>
+                    <img src="images/image-chef.png" alt="image" class="image-chef">
+
+                    <div class="card-restaurant-chef d-flex align-items-center p-4">
+                        <div class="d-flex gap-3 content p-4">
+
+                            <img src="images/image-popular-2.png" alt="image" width="80" height="120"
+                                class="image-restaurat-chef">
+
+                            <div class="details d-flex flex-column">
+                                <h6>Chef at restaurant</h6>
+                                <h5>Pearl Dolphin</h5>
+                                <a href="#" class="mt-auto mb-3">
+                                    View Details >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 px-5">
+                    <h6 class="text-uppercase">Top 4 Expert Chefs</h6>
+                    <h4>Expert Chefs in Fuddy</h4>
+
+                    <div class="card-profile active p-4 mt-4">
+                        <h6 class="text-uppercase">Pizza</h6>
+                        <div class="d-flex justify-content-between">
+                            <h4>Pheonix Satcheup</h4>
+                            <a href="#">Profile Details ></a>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <img src="images/icon-location.svg" alt="icon" class="h-25">
+                            <p>Jakarata, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="card-profile p-4 mt-4">
+                        <h6 class="text-uppercase">Pizza</h6>
+                        <div class="d-flex justify-content-between">
+                            <h4>Pheonix Satcheup</h4>
+                            <a href="#">Profile Details ></a>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <img src="images/icon-location.svg" alt="icon" class="h-25">
+                            <p>Jakarata, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="card-profile p-4 mt-4">
+                        <h6 class="text-uppercase">Pizza</h6>
+                        <div class="d-flex justify-content-between">
+                            <h4>Pheonix Satcheup</h4>
+                            <a href="#">Profile Details ></a>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <img src="images/icon-location.svg" alt="icon" class="h-25">
+                            <p>Jakarata, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
     </section>
 
 </body>
