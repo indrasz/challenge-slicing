@@ -10,27 +10,139 @@
     <!-- css -->
     <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="fonts/Poppins-Medium.ttf">
+
+    <!-- <link rel="stylesheet" href="fonts/Poppins-Medium.ttf">
     <link rel="stylesheet" href="fonts/Poppins-Light.ttf">
     <link rel="stylesheet" href="fonts/Poppins-Regular.ttf">
+    <link rel="stylesheet" href="fonts/Poppins-SemiBold.ttf"> -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <script src="vendor/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
 
-    <section class="w-100 h-100 header-section">
+    <style>
+        body {
+            background: #FAFAFA;
+        }
+
+        .text-light {
+            font: 300 'Poppins', sans-serif;
+        }
+
+        .text-regular {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .text-medium {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+
+        .text-semibold {
+            font-family: 'Poppins', sans-serif;
+
+            font-weight: 600;
+        }
+
+        .text-bold {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        .text-blue {
+            color: #5A4FCF;
+        }
+
+        .text-grey-primary {
+            color: #858585;
+        }
+
+        .text-grey-secondary {
+            color: #656565;
+        }
+
+        .text-orange {
+            color: #FFB800;
+        }
+
+        .text-orange-secondary {
+            color: #FDC886;
+        }
+
+        .text-black-primary {
+            color: #232631;
+        }
+
+        .bg-orange {
+            background: #FDC886;
+        }
+
+        .bg-orange-secondary {
+            background: rgba(253, 200, 134, 0.15);
+        }
+
+        .fs-16 {
+            font-size: 16px;
+        }
+
+        .fs-18 {
+            font-size: 18px;
+        }
+
+        .fs-22 {
+            font-size: 22px;
+        }
+
+        .fs-28 {
+            font-size: 28px;
+        }
+
+        .fs-32 {
+            font-size: 32px;
+        }
+
+        .border-12 {
+            border-radius: 12px;
+        }
+
+        .border-24 {
+            border-radius: 24px;
+        }
+
+        .header-section .nav-link {
+            color: #232631 !important;
+            font: 500 16px Poppins, sans-serif;
+        }
+
+        .header-section .nav-link:hover {
+            border-bottom: 2px solid #5A4FCF;
+        }
+
+        .header-section .nav-link.active {
+            border-bottom: 2px solid #5A4FCF !important;
+        }
+
+        .header-section .text-rating span {
+            font-weight: 400;
+        }
+
+        .header-section .restaurant-name {
+            color: #232631;
+            font-size: 22px;
+        }
+    </style>
+
+    <section class="w-100 h-100 header-section mb-5">
 
         <style>
-            body {
-                background: #FAFAFA;
-            }
-
-            .header-section {
-                font-family: 'Poppins', sans-serif;
-            }
-
             .header-section .main-logo {
                 width: 118px;
                 height: 38px;
@@ -62,18 +174,27 @@
                 background: #FFFFFF;
                 border-radius: 24px;
                 width: 350px;
-                height: 265px;
+                height: 275px;
                 margin-top: -430px;
-                margin-left: -48px;
+                margin-left: 48px;
+            }
+
+            .header-section .btn-login {
+                background: rgba(90, 79, 207, 0.1);
+                border-radius: 12px;
+            }
+
+            .header-section .text-rating {
+                color: #FFB800;
             }
         </style>
 
-        <div class="navbar-main container-fluid position-relative">
-            <nav class="navbar navbar-expand-lg navbar-light py-5 px-4">
+        <div class="navbar-main container-fluid ">
+            <nav class="navbar navbar-expand-lg navbar-light p-5">
 
-                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0 px-3">
                     <li class="nav-item me-4">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active border-1" href="#">Home</a>
                     </li>
 
                     <li class="nav-item me-4">
@@ -91,54 +212,51 @@
                 </ul>
 
                 <a href="#">
-                    <img src="images/main-logo.png" alt="main-logo" class="main-logo me-auto" />
+                    <img src="images/main-logo.png" alt="main-logo" class="main-logo me-5" />
                 </a>
 
-                <div class="search-favorite d-flex ms-auto py-2 ps-4 pe-5">
+                <div class="search-favorite d-flex me-3 ms-5 py-2 ps-4 pe-5">
                     <img src="images/icon-search.svg" alt="icon">
-                    <input type="text" class="form-control border-0" placeholder="Search your favorite food">
+                    <input type="text" class="form-control border-0 text-regular text-grey-primary fs-16 w-100 "
+                        placeholder="Search your favorite food">
                 </div>
 
-                <button class="btn btn-login py-2 px-3 ms-3">
+                <button class="btn btn-login text-semibold text-blue fs-16 py-3 px-4 me-5">
                     Login
                 </button>
             </nav>
         </div>
 
-        <div class="slider-hero d-flex gap-4 mx-5 px-5 pb-5">
-            <div>
-                <img src="images/image-header-1.png" alt="image" class="image-slider ms-4">
+        <div class="slider-hero container-fluid d-flex gap-4 mx-5 px-5 ">
+            <img src="images/image-header-1.png" alt="image" class="image-slider ms-4">
+            <img src="images/image-header-2.png" alt="image" class="image-slider ms-5">
+        </div>
 
-                <div class="card border-0 pe-5 ps-4">
-                    <div class="d-flex gap-2">
-                        <img src="images/icon-start.svg" alt="icon">
-                        <img src="images/icon-start.svg" alt="icon">
-                        <img src="images/icon-start.svg" alt="icon">
-                        <img src="images/icon-start.svg" alt="icon">
-                        <img src="images/icon-start.svg" alt="icon">
-                        <p class="pt-3">5.0 <span>(5.2K+)</span></p>
-                    </div>
-                    <h5>Padang Restaurant</h5>
-                    <h6>IDR 49.999 - IDR 560.000</h6>
-                    <div class="d-flex gap-2">
-                        <img src="images/icon-location.svg" alt="icon" height="25">
-                        <p class="">Padang, Indonesia</p>
-                    </div>
-
-                    <button class="btn btn-reservasion py-2 px-4 mt-3 me-auto bg-danger ">
-                        Make Reservasion >
-                    </button>
-
-                    <div class="d-flex gap-2 mt-2">
-                        <img src="images/icon-info.svg" alt="icon" height="25">
-                        <p>No extra cost</p>
-                    </div>
-                </div>
+        <div class="card border-0 pe-5 ps-4 mb-5">
+            <div class="d-flex gap-2">
+                <img src="images/icon-start.svg" alt="icon">
+                <img src="images/icon-start.svg" alt="icon">
+                <img src="images/icon-start.svg" alt="icon">
+                <img src="images/icon-start.svg" alt="icon">
+                <img src="images/icon-start.svg" alt="icon">
+                <p class="pt-3 text-orange text-semibold text-rating">5.0 <span
+                        class="text-grey-secondary">(5.2K+)</span></p>
+            </div>
+            <h5 class="restaurant-name text-semibold">Padang Restaurant</h5>
+            <h6 class="text-uppercase text-semibold text-grey-secondary">IDR 49.999 - IDR 560.000</h6>
+            <div class="d-flex gap-2">
+                <img src="images/icon-location.svg" alt="icon" height="25">
+                <p class="text-regular text-grey-secondary">Padang, Indonesia</p>
             </div>
 
-            <div>
-                <img src="images/image-header-2.png" alt="image" class="image-slider ms-5">
+            <button
+                class="btn btn-reservasion bg-orange text-semibold text-black fs-16 border-12 py-2 px-4 mt-3 me-auto ">
+                Make Reservasion >
+            </button>
 
+            <div class="d-flex gap-2 mt-3">
+                <img src="images/icon-info.svg" alt="icon" height="25">
+                <p class="text-regular fs-16 text-grey-secondary ">No extra cost</p>
             </div>
         </div>
     </section>
@@ -146,8 +264,17 @@
     <section class="w-100 h-100 section-benefit py-5">
         <style>
             .section-benefit .btn-details.active {
-                background: #FDC886;
                 border-radius: 12px 12px 24px 24px;
+            }
+
+            .section-benefit .btn-details:hover {
+                border-radius: 12px 12px 24px 24px;
+                background: #FDC886 !important;
+                transition: 0.4s;
+            }
+
+            .section-benefit {
+                margin-top: 180px;
             }
 
             .section-benefit .card {
@@ -156,66 +283,74 @@
             }
         </style>
         <div class="container">
-            <h6 class="text-center text-uppercase">Special Benefit for you</h6>
-            <h2 class="text-center mb-4">Why Should Choose Us?</h2>
+            <h6 class="text-center text-uppercase text-blue text-semibold fs-16">Special Benefit for you</h6>
+            <h2 class="text-center text-black-primary text-semibold fs-28 mb-4">Why Should Choose Us?</h2>
 
             <div class="row mt-4">
                 <div class="col-3 p-2">
                     <div class="card text-center border-0 bg-white d-flex flex-column">
-                        <div class="bg-orange-secondary rounded-pill p-4">
+                        <div class="bg-orange-secondary rounded-circle d-block mx-auto p-2 mt-4">
                             <img src="images/icon-discount.svg" alt="icon">
                         </div>
 
                         <div class="px-4 py-2">
-                            <h5>Extra Discount</h5>
-                            <h6 class="mt-2 mb-4">Get your special discount by using our reservation</h6>
+                            <h5 class="text-semibold text-black-primary fs-18 mt-3">Extra Discount</h5>
+                            <h6 class="text-regular text-grey-secondary fs-16 mt-2 mb-4">Get your special discount by
+                                using our reservation</h6>
                         </div>
-                        <button class="btn btn-details active text-dark p-3 mt-auto">
+                        <button
+                            class="btn btn-details active bg-orange text-semibold text-black-primary fs-16 p-3 mt-auto">
                             View Details >
                         </button>
                     </div>
                 </div>
                 <div class="col-3 p-2">
                     <div class="card text-center border-0 bg-white d-flex flex-column">
-                        <div class="bg-orange-secondary rounded-pill p-4">
+                        <div class="bg-orange-secondary rounded-circle d-block mx-auto p-2 mt-4">
                             <img src="images/icon-discount.svg" alt="icon">
                         </div>
 
                         <div class="px-4 py-2">
-                            <h5>Extra Discount</h5>
-                            <h6 class="mt-2 mb-4">Get your special discount by using our reservation</h6>
+                            <h5 class="text-semibold text-black-primary fs-18 mt-3">Extra Discount</h5>
+                            <h6 class="text-regular text-grey-secondary fs-16 mt-2 mb-4">Get your special discount by
+                                using our reservation</h6>
                         </div>
-                        <button class="btn btn-details text-dark p-3 mt-auto">
+                        <button
+                            class="btn btn-details bg-transparent active text-semibold text-black-primary fs-16 p-3 mt-auto">
                             View Details >
                         </button>
                     </div>
                 </div>
                 <div class="col-3 p-2">
                     <div class="card text-center border-0 bg-white d-flex flex-column">
-                        <div class="bg-orange-secondary rounded-pill p-4">
+                        <div class="bg-orange-secondary rounded-circle d-block mx-auto p-2 mt-4">
                             <img src="images/icon-discount.svg" alt="icon">
                         </div>
 
                         <div class="px-4 py-2">
-                            <h5>Extra Discount</h5>
-                            <h6 class="mt-2 mb-4">Get your special discount by using our reservation</h6>
+                            <h5 class="text-semibold text-black-primary fs-18 mt-3">Extra Discount</h5>
+                            <h6 class="text-regular text-grey-secondary fs-16 mt-2 mb-4">Get your special discount by
+                                using our reservation</h6>
                         </div>
-                        <button class="btn btn-details text-dark p-3 mt-auto">
+                        <button
+                            class="btn btn-details bg-transparent active text-semibold text-black-primary fs-16 p-3 mt-auto">
                             View Details >
                         </button>
                     </div>
                 </div>
                 <div class="col-3 p-2">
                     <div class="card text-center border-0 bg-white d-flex flex-column">
-                        <div class="bg-orange-secondary rounded-pill p-4">
+                        <div class="bg-orange-secondary rounded-circle d-block mx-auto p-2 mt-4">
                             <img src="images/icon-discount.svg" alt="icon">
                         </div>
 
                         <div class="px-4 py-2">
-                            <h5>Extra Discount</h5>
-                            <h6 class="mt-2 mb-4">Get your special discount by using our reservation</h6>
+                            <h5 class="text-semibold text-black-primary fs-18 mt-3">Extra Discount</h5>
+                            <h6 class="text-regular text-grey-secondary fs-16 mt-2 mb-4">Get your special discount by
+                                using our reservation</h6>
                         </div>
-                        <button class="btn btn-details text-dark p-3 mt-auto">
+                        <button
+                            class="btn btn-details bg-transparent active text-semibold text-black-primary fs-16 p-3 mt-auto">
                             View Details >
                         </button>
                     </div>
@@ -250,27 +385,30 @@
         <div class="container py-5">
             <div class="row py-3 align-items-center">
                 <div class="col-4">
-                    <h6 class="text-uppercase">Top 3 Featured Restaurant</h6>
-                    <h2>Most Popular Restaurants</h2>
-                    <p>The best restaurant in our opinion is how much customers like it in terms of place, price,
-                        comfort and of course the taste of
+                    <h6 class="text-uppercase text-semibold text-blue fs-16">Top 3 Featured Restaurant</h6>
+                    <h2 class="text-semibold text-black-primary fs-28">Most Popular Restaurants</h2>
+                    <p class="text-regular text-grey-secondary fs-16 ">The best restaurant in our opinion is how <br>
+                        much customers like it in terms of place, <br> price,
+                        comfort and of course the taste of <br>
                         the food itself.</p>
-                    <button class="btn btn-view-all py-2 px-3">
+                    <button
+                        class="btn btn-view-all text-semibold text-black-primary fs-16 bg-orange border-12 py-3 px-4 mt-5">
                         View All Restaurant >
                     </button>
                 </div>
 
                 <div class="col-4">
-                    <div class="card-popular bg-image-popular p-4 d-flex flex-column">
+                    <div class="card-popular w-100 bg-image-popular p-4 d-flex flex-column">
                         <div class="card border-0 px-4 pt-4 mt-auto mb-2 ">
                             <div class="d-flex gap-2 h-25">
                                 <img src="images/icon-start.svg" alt="icon" height="23">
-                                <p>5.0 <span>(7.6K+)</span></p>
+                                <p class="text-semibold text-orange fs-16">5.0 <span
+                                        class="text-regular text-grey-secondary fs-16">(7.6K+)</span></p>
                             </div>
                             <div class="d-flex h-25">
-                                <p>Bind Balorant</p>
+                                <p class="text-semibold text-black-primary fs-18">Bind Balorant</p>
                                 <span class="ms-auto">
-                                    <button class="btn p-1 bg-danger">
+                                    <button class="btn p-2 bg-orange border-12">
                                         <img src="images/icon-arrow.svg" alt="icon">
                                     </button>
                                 </span>
@@ -278,7 +416,7 @@
 
                             <div class="d-flex gap-2">
                                 <img src="images/icon-location.svg" alt="icon" height="25">
-                                <p>Jakarta, Indonesia</p>
+                                <p class="text-regular text-grey-secondary fs-16">Jakarta, Indonesia</p>
                             </div>
                         </div>
                     </div>
@@ -323,17 +461,18 @@
         <div class="container py-5">
             <div class="d-flex justify-content-between">
                 <div class="title">
-                    <h6 class="text-uppercase">
+                    <h6 class="text-uppercase text-semibold text-blue fs-16">
                         Restaurant Based By City
                     </h6>
-                    <h4>
+                    <h4 class="text-semibold text-black-primary fs-28">
                         Restaurant Near You
                     </h4>
                 </div>
                 <div class="location ms-auto">
                     <div class="d-flex gap-1 location-select bg-grey px-4 py-2">
                         <img src="images/icon-location.svg" alt="icon">
-                        <select class="form-select border-0 bg-transparent" aria-label="Default select example">
+                        <select class="form-select border-0 bg-transparent text-medium text-grey-secondary fs-16"
+                            aria-label="Default select example">
                             <option selected>Jakarta, Indonesia</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
@@ -348,18 +487,20 @@
                         <div class="card border-0 px-4 pt-4 mt-auto">
                             <div class="d-flex gap-2 h-25">
                                 <img src="images/icon-start.svg" alt="icon" height="23">
-                                <p>5.0 <span>(7.6K+)</span></p>
+                                <p class="text-semibold text-orange fs-16">5.0 <span
+                                        class="text-regular text-grey-secondary fs-16">(7.6K+)</span></p>
                             </div>
                             <div class="d-flex h-25">
-                                <p class="text-uppercase">Bind Balorant</p>
+                                <p class="text-semibold text-black-primary fs-18">Bind Balorant</p>
                                 <span class="ms-auto">
-                                    <button class="btn p-1 bg-danger">
+                                    <button class="btn p-2 bg-orange border-12">
                                         <img src="images/icon-arrow.svg" alt="icon">
                                     </button>
                                 </span>
                             </div>
 
-                            <p class="text-uppercase">IDR 29.000 - IDR 259.999</p>
+                            <p class="text-uppercase text-semibold text-grey-secondary fs-18">IDR 29.000 - IDR 259.999
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -368,18 +509,20 @@
                         <div class="card border-0 px-4 pt-4 mt-auto">
                             <div class="d-flex gap-2 h-25">
                                 <img src="images/icon-start.svg" alt="icon" height="23">
-                                <p>5.0 <span>(7.6K+)</span></p>
+                                <p class="text-semibold text-orange fs-16">5.0 <span
+                                        class="text-regular text-grey-secondary fs-16">(7.6K+)</span></p>
                             </div>
                             <div class="d-flex h-25">
-                                <p class="text-uppercase">Bind Balorant</p>
+                                <p class="text-semibold text-black-primary fs-18">Bind Balorant</p>
                                 <span class="ms-auto">
-                                    <button class="btn p-1 bg-danger">
+                                    <button class="btn p-2 bg-orange border-12">
                                         <img src="images/icon-arrow.svg" alt="icon">
                                     </button>
                                 </span>
                             </div>
 
-                            <p class="text-uppercase">IDR 29.000 - IDR 259.999</p>
+                            <p class="text-uppercase text-semibold text-grey-secondary fs-18">IDR 29.000 - IDR 259.999
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -389,24 +532,27 @@
                         <div class="card border-0 px-4 pt-4 mt-auto">
                             <div class="d-flex gap-2 h-25">
                                 <img src="images/icon-start.svg" alt="icon" height="23">
-                                <p>5.0 <span>(7.6K+)</span></p>
+                                <p class="text-semibold text-orange fs-16">5.0 <span
+                                        class="text-regular text-grey-secondary fs-16">(7.6K+)</span></p>
                             </div>
                             <div class="d-flex h-25">
-                                <p class="text-uppercase">Bind Balorant</p>
+                                <p class="text-semibold text-black-primary fs-18">Bind Balorant</p>
                                 <span class="ms-auto">
-                                    <button class="btn p-1 bg-danger">
+                                    <button class="btn p-2 bg-orange border-12">
                                         <img src="images/icon-arrow.svg" alt="icon">
                                     </button>
                                 </span>
                             </div>
 
-                            <p class="text-uppercase">IDR 29.000 - IDR 259.999</p>
+                            <p class="text-uppercase text-semibold text-grey-secondary fs-18">IDR 29.000 - IDR 259.999
+                            </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="text-center mt-5">
-                    <button class="btn btn-view px-4 py-2">
+                <div class="text-center mt-3">
+                    <button
+                        class="btn btn-view-all text-semibold text-black-primary fs-16 bg-orange border-12 py-3 px-4 mt-5">
                         View All Restaurant >
                     </button>
                 </div>
@@ -423,6 +569,13 @@
                 margin-top: -50px;
             }
 
+            .section-chef-expert .title {
+
+                margin-top: -50px;
+            }
+
+
+
             .section-chef-expert .card {
                 width: 179px;
                 box-shadow: 8px 8px 25px rgba(102, 102, 102, 0.04);
@@ -434,13 +587,12 @@
 
             .section-chef-expert .card-restaurant-chef {
 
-
                 margin-top: -250px;
-                margin-left: -65px;
+                margin-left: -75px;
             }
 
             .section-chef-expert .card-restaurant-chef .content {
-                width: 300px;
+                width: 340px;
                 box-shadow: 8px 8px 25px rgba(102, 102, 102, 0.04);
                 border-radius: 24px;
                 background: #FFFFFF;
@@ -449,6 +601,8 @@
 
             .section-chef-expert .card-restaurant-chef .content .image-restaurat-chef {
                 border-radius: 12px;
+                object-fit: cover;
+                object-position: center;
             }
 
             .section-chef-expert .card-profile.active {
@@ -456,7 +610,11 @@
                 border-radius: 24px;
             }
 
-            .section-chef-expert .card-profileB img {
+            .section-chef-expert .card-profile.active img {
+                filter: none;
+            }
+
+            .section-chef-expert .card-profile img {
                 filter: brightness(0%);
             }
 
@@ -469,24 +627,25 @@
             <div class="row p-4">
                 <div class="col-6 px-5">
                     <div class="card text-center border-0 p-4 float-end position-relative">
-                        <div class="bg-icon p-4">
-                            <img src="images/icon-experience.svg" alt="icon">
+                        <div class="bg-orange-secondary rounded-circle d-block mx-auto p-2 mb-3">
+                            <img src="images/icon-discount.svg" alt="icon">
                         </div>
-                        <h5>12 Years</h5>
-                        <h6>Experience</h6>
+                        <h5 class="text-semibold text-black-secondary fs-18">12 Years</h5>
+                        <h6 class="text-regular text-grey-secondary fs-16">Experience</h6>
                     </div>
                     <img src="images/image-chef.png" alt="image" class="image-chef">
 
                     <div class="card-restaurant-chef d-flex align-items-center p-4">
                         <div class="d-flex gap-3 content p-4">
 
-                            <img src="images/image-popular-2.png" alt="image" width="80" height="120"
+                            <img src="images/image-popular-2.png" alt="image" width="90" height="120"
                                 class="image-restaurat-chef">
 
                             <div class="details d-flex flex-column">
-                                <h6>Chef at restaurant</h6>
-                                <h5>Pearl Dolphin</h5>
-                                <a href="#" class="mt-auto mb-3">
+                                <h6 class="text-regular text-grey-secondary fs-16">Chef at restaurant</h6>
+                                <h5 class="text-semibold text-black-secondary fs-18">Pearl Dolphin</h5>
+                                <a href="#"
+                                    class="text-decoration-none text-semibold text-orange-secondary fs-16 mt-auto mb-3">
                                     View Details >
                                 </a>
                             </div>
@@ -495,44 +654,61 @@
                 </div>
 
                 <div class="col-6 px-5">
-                    <h6 class="text-uppercase">Top 4 Expert Chefs</h6>
-                    <h4>Expert Chefs in Fuddy</h4>
+                    <div class="ms-3">
+                        <h6 class="text-uppercase text-semibold text-blue title fs-18">Top 4 Expert Chefs</h6>
+                        <h4 class="text-semibold text-black-primary fs-32 ">Expert Chefs in Fuddy</h4>
 
-                    <div class="card-profile active p-4 mt-4">
-                        <h6 class="text-uppercase">Pizza</h6>
-                        <div class="d-flex justify-content-between">
-                            <h4>Pheonix Satcheup</h4>
-                            <a href="#">Profile Details ></a>
+                        <div class="card-profile active p-4 mt-4">
+                            <h6 class="text-uppercase text-medium text-grey-secondary fs-16">Pizza</h6>
+                            <div class="d-flex justify-content-between">
+                                <h4 class="text-semibold text-black-primary fs-22">Pheonix Satcheup</h4>
+                                <a href="#" class="text-decoration-none text-medium text-orange-secondary fs-16">Profile
+                                    Details ></a>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <img src="images/icon-location.svg" alt="icon" class="h-25">
+                                <p class="text-regular text-grey-secondary fs-16">Jakarata, Indonesia</p>
+                            </div>
                         </div>
-                        <div class="d-flex gap-2">
-                            <img src="images/icon-location.svg" alt="icon" class="h-25">
-                            <p>Jakarata, Indonesia</p>
+                        <div class="card-profile p-4 mt-4">
+                            <h6 class="text-uppercase text-medium text-grey-secondary fs-16">Pizza</h6>
+                            <div class="d-flex justify-content-between">
+                                <h4 class="text-semibold text-black-primary fs-22">Pheonix Satcheup</h4>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <img src="images/icon-location.svg" alt="icon" class="h-25">
+                                <p class="text-regular text-grey-secondary fs-16">Jakarata, Indonesia</p>
+                            </div>
                         </div>
+                        <div class="card-profile p-4 mt-4">
+                            <h6 class="text-uppercase text-medium text-grey-secondary fs-16">Pizza</h6>
+                            <div class="d-flex justify-content-between">
+                                <h4 class="text-semibold text-black-primary fs-22">Pheonix Satcheup</h4>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <img src="images/icon-location.svg" alt="icon" class="h-25">
+                                <p class="text-regular text-grey-secondary fs-16">Jakarata, Indonesia</p>
+                            </div>
+                        </div>
+
+                        <div class="card-profile p-4 mt-4">
+                            <h6 class="text-uppercase text-medium text-grey-secondary fs-16">Pizza</h6>
+                            <div class="d-flex justify-content-between">
+                                <h4 class="text-semibold text-black-primary fs-22">Pheonix Satcheup</h4>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <img src="images/icon-location.svg" alt="icon" class="h-25">
+                                <p class="text-regular text-grey-secondary fs-16">Jakarata, Indonesia</p>
+                            </div>
+                        </div>
+
+                        <button
+                            class="btn btn-view-all text-semibold text-black-primary fs-16 bg-orange border-12 py-3 px-4 mt-4 ms-3">
+                            View All Chef >
+                        </button>
+
                     </div>
 
-                    <div class="card-profile p-4 mt-4">
-                        <h6 class="text-uppercase">Pizza</h6>
-                        <div class="d-flex justify-content-between">
-                            <h4>Pheonix Satcheup</h4>
-                            <a href="#">Profile Details ></a>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <img src="images/icon-location.svg" alt="icon" class="h-25">
-                            <p>Jakarata, Indonesia</p>
-                        </div>
-                    </div>
-
-                    <div class="card-profile p-4 mt-4">
-                        <h6 class="text-uppercase">Pizza</h6>
-                        <div class="d-flex justify-content-between">
-                            <h4>Pheonix Satcheup</h4>
-                            <a href="#">Profile Details ></a>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <img src="images/icon-location.svg" alt="icon" class="h-25">
-                            <p>Jakarata, Indonesia</p>
-                        </div>
-                    </div>
                 </div>
 
 
