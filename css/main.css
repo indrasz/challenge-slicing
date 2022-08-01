@@ -1,0 +1,286 @@
+@import url('../fonts/stylesheet.css');
+
+body {
+  background: #fafafa;
+}
+
+.icon{
+  height: 25px;
+}
+
+.main-logo{
+  margin-right: 100px;
+}
+
+.text-light {
+  font: 300 "Poppins", sans-serif;
+}
+
+.text-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.text-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.text-semibold {
+  font-family: "Poppins", sans-serif;
+
+  font-weight: 600;
+}
+
+.text-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.text-blue {
+  color: #5a4fcf;
+}
+
+.text-grey-primary {
+  color: #858585;
+}
+
+.text-grey-secondary {
+  color: #656565;
+}
+
+.text-orange {
+  color: #ffb800;
+}
+
+.text-orange-secondary {
+  color: #fdc886;
+}
+
+.text-black-primary {
+  color: #232631;
+}
+
+.bg-orange {
+  background: #fdc886;
+}
+
+.bg-orange-secondary {
+  background: rgba(253, 200, 134, 0.15);
+}
+
+.bg-grey {
+  background: #f2f2f2;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.border-12 {
+  border-radius: 12px;
+}
+
+.border-24 {
+  border-radius: 24px;
+}
+
+.header-section .nav-link {
+  color: #232631 !important;
+  font: 500 16px Poppins, sans-serif;
+}
+
+.header-section .nav-link:hover {
+  border-bottom: 2px solid #5a4fcf;
+}
+
+.header-section .nav-link.active {
+  border-bottom: 2px solid #5a4fcf !important;
+}
+
+.header-section .text-rating span {
+  font-weight: 400;
+}
+
+.header-section .restaurant-name {
+  color: #232631;
+  font-size: 22px;
+}
+.header-section .main-logo {
+  width: 118px;
+  height: 38px;
+}
+
+.header-section .search-favorite {
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+.header-section .slider-hero {
+  overflow-x: auto;
+  padding-left: 100px;
+}
+
+.header-section .slider-hero::-webkit-scrollbar {
+  height: 0 !important;
+}
+
+.header-section .slider-hero .image-slider {
+  width: 1108px;
+  height: 564px;
+  border-radius: 24px;
+}
+
+.header-section .card {
+  background: #ffffff;
+  border-radius: 24px;
+  width: 350px;
+  height: 285px;
+  margin-top: -430px;
+  margin-left: 48px;
+}
+
+.header-section .btn-login {
+  background: rgba(90, 79, 207, 0.1);
+  border-radius: 12px;
+}
+
+.header-section .text-rating {
+  color: #ffb800;
+}
+
+.section-benefit .btn-details.active {
+  border-radius: 12px 12px 24px 24px;
+}
+
+.section-benefit .btn-details:hover {
+  border-radius: 12px 12px 24px 24px;
+  background: #fdc886 !important;
+  transition: 0.4s;
+}
+
+.section-benefit {
+  margin-top: 250px;
+}
+
+.section-benefit .card {
+  border-radius: 24px;
+  height: 300px;
+}
+
+.popular-section .card-popular {
+  width: 400px;
+  height: 475px;
+  border-radius: 24px;
+}
+
+.popular-section .card-popular .card {
+  border-radius: 24px;
+  margin-top: -180px !important;
+}
+
+.popular-section .image-popular {
+  border-radius: 24px;
+  height: 475px;
+}
+
+.popular-section .bg-image-popular {
+  background-image: url("images/image-popular-1.png");
+  background-size: cover;
+}
+
+.section-restaurant-based .location-select {
+  border-radius: 12px;
+}
+
+.section-restaurant-based .card-restaurant {
+  width: 427px;
+  height: 415px;
+  border-radius: 24px;
+}
+
+.section-restaurant-based .card-restaurant .image-restaurant {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 24px;
+}
+
+.section-restaurant-based .card-restaurant .card {
+  border-radius: 24px;
+  margin-top: -180px !important;
+}
+
+.section-chef-expert .image-chef {
+  border-radius: 24px;
+  width: auto;
+  height: 848px;
+  margin-top: -50px;
+}
+
+.section-chef-expert .title {
+  margin-top: -50px;
+}
+
+.section-chef-expert .card {
+  width: 179px;
+  box-shadow: 8px 8px 25px rgba(102, 102, 102, 0.04);
+  border-radius: 24px;
+
+  margin-bottom: -250px;
+  margin-right: -65px;
+}
+
+.section-chef-expert .card-restaurant-chef {
+  margin-top: -250px;
+  margin-left: -75px;
+}
+
+.section-chef-expert .card-restaurant-chef .content {
+  width: 340px;
+  box-shadow: 8px 8px 25px rgba(102, 102, 102, 0.04);
+  border-radius: 24px;
+  background: #ffffff;
+}
+
+.section-chef-expert .card-restaurant-chef .content .image-restaurat-chef {
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: center;
+  width: 90px;
+  height: 120px;
+}
+
+.section-chef-expert .card-profile.active {
+  background: #ffffff;
+  border-radius: 24px;
+}
+
+.section-chef-expert .card-profile.active img {
+  filter: none;
+}
+
+.section-chef-expert .card-profile img {
+  filter: brightness(0%);
+}
+
+.section-chef-expert .card-profile {
+  background: transparent;
+  border-radius: 24px;
+}

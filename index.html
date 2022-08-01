@@ -10,16 +10,7 @@
     <!-- css -->
     <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-
-    <!-- <link rel="stylesheet" href="fonts/Poppins-Medium.ttf">
-    <link rel="stylesheet" href="fonts/Poppins-Light.ttf">
-    <link rel="stylesheet" href="fonts/Poppins-Regular.ttf">
-    <link rel="stylesheet" href="fonts/Poppins-SemiBold.ttf"> -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
     <script src="vendor/js/bootstrap.min.js"></script>
 
 </head>
@@ -27,169 +18,10 @@
 <body>
 
     <style>
-        body {
-            background: #FAFAFA;
-        }
-
-        .text-light {
-            font: 300 'Poppins', sans-serif;
-        }
-
-        .text-regular {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-            line-height: 24px;
-        }
-
-        .text-medium {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500;
-        }
-
-        .text-semibold {
-            font-family: 'Poppins', sans-serif;
-
-            font-weight: 600;
-        }
-
-        .text-bold {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 700;
-        }
-
-        .text-blue {
-            color: #5A4FCF;
-        }
-
-        .text-grey-primary {
-            color: #858585;
-        }
-
-        .text-grey-secondary {
-            color: #656565;
-        }
-
-        .text-orange {
-            color: #FFB800;
-        }
-
-        .text-orange-secondary {
-            color: #FDC886;
-        }
-
-        .text-black-primary {
-            color: #232631;
-        }
-
-        .bg-orange {
-            background: #FDC886;
-        }
-
-        .bg-orange-secondary {
-            background: rgba(253, 200, 134, 0.15);
-        }
-
-        .fs-16 {
-            font-size: 16px;
-        }
-
-        .fs-18 {
-            font-size: 18px;
-        }
-
-        .fs-22 {
-            font-size: 22px;
-        }
-
-        .fs-28 {
-            font-size: 28px;
-        }
-
-        .fs-32 {
-            font-size: 32px;
-        }
-
-        .border-12 {
-            border-radius: 12px;
-        }
-
-        .border-24 {
-            border-radius: 24px;
-        }
-
-        .header-section .nav-link {
-            color: #232631 !important;
-            font: 500 16px Poppins, sans-serif;
-        }
-
-        .header-section .nav-link:hover {
-            border-bottom: 2px solid #5A4FCF;
-        }
-
-        .header-section .nav-link.active {
-            border-bottom: 2px solid #5A4FCF !important;
-        }
-
-        .header-section .text-rating span {
-            font-weight: 400;
-        }
-
-        .header-section .restaurant-name {
-            color: #232631;
-            font-size: 22px;
-        }
+       
     </style>
 
     <section class="w-100 h-100 header-section mb-5">
-
-        <style>
-            .header-section .main-logo {
-                width: 118px;
-                height: 38px;
-            }
-
-            .header-section .search-favorite {
-                background: #FFFFFF;
-                border-radius: 12px;
-            }
-
-
-            .header-section .slider-hero {
-                overflow-x: auto;
-                padding-left: 100px;
-            }
-
-            .header-section .slider-hero::-webkit-scrollbar {
-                height: 0 !important;
-            }
-
-
-            .header-section .slider-hero .image-slider {
-                width: 1108px;
-                height: 564px;
-                border-radius: 24px;
-
-            }
-
-            .header-section .card {
-                background: #FFFFFF;
-                border-radius: 24px;
-                width: 350px;
-                height: 275px;
-                margin-top: -430px;
-                margin-left: 48px;
-            }
-
-            .header-section .btn-login {
-                background: rgba(90, 79, 207, 0.1);
-                border-radius: 12px;
-            }
-
-            .header-section .text-rating {
-                color: #FFB800;
-            }
-        </style>
-
         <div class="navbar-main container-fluid ">
             <nav class="navbar navbar-expand-lg navbar-light p-5">
 
@@ -213,7 +45,7 @@
                 </ul>
 
                 <a href="#">
-                    <img src="images/main-logo.png" alt="main-logo" class="main-logo me-5" />
+                    <img src="images/main-logo.png" alt="main-logo" class="main-logo" />
                 </a>
 
                 <div class="search-favorite d-flex me-3 ms-5 py-2 ps-4 pe-5">
@@ -246,43 +78,23 @@
             <h5 class="restaurant-name text-semibold">Padang Restaurant</h5>
             <h6 class="text-uppercase text-semibold text-grey-secondary">IDR 49.999 - IDR 560.000</h6>
             <div class="d-flex gap-2">
-                <img src="images/icon-location.svg" alt="icon" height="25">
+                <img src="images/icon-location.svg" alt="icon" class="icon">
                 <p class="text-regular text-grey-secondary">Padang, Indonesia</p>
             </div>
 
             <button
-                class="btn btn-reservasion bg-orange text-semibold text-black fs-16 border-12 py-2 px-4 mt-3 me-auto ">
+                class="btn btn-reservasion bg-orange text-semibold text-black fs-16 border-12 py-3 px-4 mt-3 me-auto ">
                 Make Reservasion >
             </button>
 
-            <div class="d-flex gap-2 mt-3">
-                <img src="images/icon-info.svg" alt="icon" height="25">
+            <div class="d-flex gap-2 mt-3 ">
+                <img src="images/icon-info.svg" alt="icon" class="icon">
                 <p class="text-regular fs-16 text-grey-secondary ">No extra cost</p>
             </div>
         </div>
     </section>
 
     <section class="w-100 h-100 section-benefit py-5">
-        <style>
-            .section-benefit .btn-details.active {
-                border-radius: 12px 12px 24px 24px;
-            }
-
-            .section-benefit .btn-details:hover {
-                border-radius: 12px 12px 24px 24px;
-                background: #FDC886 !important;
-                transition: 0.4s;
-            }
-
-            .section-benefit {
-                margin-top: 250px;
-            }
-
-            .section-benefit .card {
-                border-radius: 24px;
-                height: 300px;
-            }
-        </style>
         <div class="container">
             <h6 class="text-center text-uppercase text-blue text-semibold fs-16">Special Benefit for you</h6>
             <h2 class="text-center text-black-primary text-semibold fs-28 mb-5">Why Should Choose Us?</h2>
@@ -313,7 +125,8 @@
 
                         <div class="px-4 py-2">
                             <h5 class="text-semibold text-black-primary fs-18 mt-3">Come and Eat</h5>
-                            <h6 class="text-regular text-grey-secondary fs-16 mt-2 mb-4">Get your own table quickly & without waiting in line</h6>
+                            <h6 class="text-regular text-grey-secondary fs-16 mt-2 mb-4">Get your own table quickly &
+                                without waiting in line</h6>
                         </div>
                         <button
                             class="btn btn-details bg-transparent active text-semibold text-black-primary fs-16 p-3 mt-auto">
@@ -329,7 +142,8 @@
 
                         <div class="px-4 py-2">
                             <h5 class="text-semibold text-black-primary fs-18 mt-3">No Extra Fee</h5>
-                            <h6 class="text-regular text-grey-secondary fs-16 mt-2 mb-4">Get tax free if you want to order food and make a reservation
+                            <h6 class="text-regular text-grey-secondary fs-16 mt-2 mb-4">Get tax free if you want to
+                                order food and make a reservation
                             </h6>
                         </div>
                         <button
@@ -346,7 +160,8 @@
 
                         <div class="px-4 py-2">
                             <h5 class="text-semibold text-black-primary fs-18 mt-3">Guaranteed Cleanliness</h5>
-                            <h6 class="text-regular text-grey-secondary fs-16 mt-2 mb-4">We ensure the cleanliness of the place as well as the food</h6>
+                            <h6 class="text-regular text-grey-secondary fs-16 mt-2 mb-4">We ensure the cleanliness of
+                                the place as well as the food</h6>
                         </div>
                         <button
                             class="btn btn-details bg-transparent active text-semibold text-black-primary fs-16 p-3 mt-auto">
@@ -359,28 +174,6 @@
     </section>
 
     <section class="w-100 h-100 popular-section">
-        <style>
-            .popular-section .card-popular {
-                width: 400px;
-                height: 475px;
-                border-radius: 24px;
-            }
-
-            .popular-section .card-popular .card {
-
-                border-radius: 24px;
-            }
-
-            .popular-section .image-popular {
-                border-radius: 24px;
-                height: 475px;
-            }
-
-            .popular-section .bg-image-popular {
-                background-image: url('images/image-popular-1.png');
-                background-size: cover;
-            }
-        </style>
         <div class="container py-5">
             <div class="row py-3 align-items-center">
                 <div class="col-4">
@@ -397,10 +190,11 @@
                 </div>
 
                 <div class="col-4">
-                    <div class="card-popular w-100 bg-image-popular p-4 d-flex flex-column">
-                        <div class="card border-0 px-4 pt-4 mt-auto mb-2 ">
+                    <div class="card-popular w-100 bg-image-popular d-flex flex-column">
+                        <img src="images/image-popular-1.png" alt="image" class="image-popular">
+                        <div class="card border-0 px-4 pt-4 mt-auto mb-2 mx-4">
                             <div class="d-flex gap-2 h-25">
-                                <img src="images/icon-start.svg" alt="icon" height="23">
+                                <img src="images/icon-start.svg" alt="icon" class="icon">
                                 <p class="text-semibold text-orange fs-16">5.0 <span
                                         class="text-regular text-grey-secondary fs-16">(7.6K+)</span></p>
                             </div>
@@ -414,7 +208,7 @@
                             </div>
 
                             <div class="d-flex gap-2">
-                                <img src="images/icon-location.svg" alt="icon" height="25">
+                                <img src="images/icon-location.svg" alt="icon" class="icon">
                                 <p class="text-regular text-grey-secondary fs-16">Jakarta, Indonesia</p>
                             </div>
                         </div>
@@ -433,40 +227,6 @@
     </section>
 
     <section class="w-100 h-100 section-restaurant-based">
-        <style>
-            .bg-grey {
-                background: #F2F2F2;
-            }
-
-            .section-restaurant-based .location-select {
-                border-radius: 12px;
-            }
-
-            .section-restaurant-based .card-restaurant {
-                width: 427px;
-                height: 415px;
-                border-radius: 24px;
-            }
-
-            .section-restaurant-based .card-restaurant.bg-image-restaurant-1 {
-                background-image: url('images/image-restaurant-based-1.png');
-                background-size: cover;
-            }
-
-            .section-restaurant-based .card-restaurant.bg-image-restaurant-2 {
-                background-image: url('images/image-restaurant-based-2.png');
-                background-size: cover;
-            }
-
-            .section-restaurant-based .card-restaurant.bg-image-restaurant-3 {
-                background-image: url('images/image-restaurant-based-3.png');
-                background-size: cover;
-            }
-
-            .section-restaurant-based .card-restaurant .card {
-                border-radius: 24px;
-            }
-        </style>
         <div class="container py-5">
             <div class="d-flex justify-content-between">
                 <div class="title">
@@ -492,10 +252,12 @@
             </div>
             <div class="row mt-4">
                 <div class="col-4">
-                    <div class="card-restaurant bg-image-restaurant-1 d-flex flex-column p-3">
-                        <div class="card border-0 px-4 pt-4 mt-auto">
+                    <div class="card-restaurant d-flex flex-column">
+
+                        <img src="images/image-restaurant-based-1.png" alt="image" class="image-restaurant w-100 h-100">
+                        <div class="card border-0 px-4 pt-4 mt-auto mx-4 mb-4">
                             <div class="d-flex gap-2 h-25">
-                                <img src="images/icon-start.svg" alt="icon" height="23">
+                                <img src="images/icon-start.svg" alt="icon" class="icon">
                                 <p class="text-semibold text-orange fs-16">5.0 <span
                                         class="text-regular text-grey-secondary fs-16">(7.6K+)</span></p>
                             </div>
@@ -514,10 +276,12 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card-restaurant bg-image-restaurant-2 d-flex flex-column p-3">
-                        <div class="card border-0 px-4 pt-4 mt-auto">
+                    <div class="card-restaurant d-flex flex-column">
+
+                        <img src="images/image-restaurant-based-2.png" alt="image" class="image-restaurant w-100 h-100">
+                        <div class="card border-0 px-4 pt-4 mt-auto mx-4 mb-4">
                             <div class="d-flex gap-2 h-25">
-                                <img src="images/icon-start.svg" alt="icon" height="23">
+                                <img src="images/icon-start.svg" alt="icon" class="icon">
                                 <p class="text-semibold text-orange fs-16">5.0 <span
                                         class="text-regular text-grey-secondary fs-16">(3.6K+)</span></p>
                             </div>
@@ -537,10 +301,12 @@
                 </div>
 
                 <div class="col-4">
-                    <div class="card-restaurant bg-image-restaurant-3 d-flex flex-column p-3">
-                        <div class="card border-0 px-4 pt-4 mt-auto">
+                    <div class="card-restaurant d-flex flex-column">
+
+                        <img src="images/image-restaurant-based-3.png" alt="image" class="image-restaurant w-100 h-100">
+                        <div class="card border-0 px-4 pt-4 mt-auto mx-4 mb-4">
                             <div class="d-flex gap-2 h-25">
-                                <img src="images/icon-start.svg" alt="icon" height="23">
+                                <img src="images/icon-start.svg" alt="icon" class="icon">
                                 <p class="text-semibold text-orange fs-16">5.0 <span
                                         class="text-regular text-grey-secondary fs-16">(11K+)</span></p>
                             </div>
@@ -570,68 +336,6 @@
     </section>
 
     <section class="w-100 h-100 section-chef-expert">
-        <style>
-            .section-chef-expert .image-chef {
-                border-radius: 24px;
-                width: auto;
-                height: 848px;
-                margin-top: -50px;
-            }
-
-            .section-chef-expert .title {
-
-                margin-top: -50px;
-            }
-
-
-
-            .section-chef-expert .card {
-                width: 179px;
-                box-shadow: 8px 8px 25px rgba(102, 102, 102, 0.04);
-                border-radius: 24px;
-
-                margin-bottom: -250px;
-                margin-right: -65px;
-            }
-
-            .section-chef-expert .card-restaurant-chef {
-
-                margin-top: -250px;
-                margin-left: -75px;
-            }
-
-            .section-chef-expert .card-restaurant-chef .content {
-                width: 340px;
-                box-shadow: 8px 8px 25px rgba(102, 102, 102, 0.04);
-                border-radius: 24px;
-                background: #FFFFFF;
-
-            }
-
-            .section-chef-expert .card-restaurant-chef .content .image-restaurat-chef {
-                border-radius: 12px;
-                object-fit: cover;
-                object-position: center;
-            }
-
-            .section-chef-expert .card-profile.active {
-                background: #FFFFFF;
-                border-radius: 24px;
-            }
-
-            .section-chef-expert .card-profile.active img {
-                filter: none;
-            }
-
-            .section-chef-expert .card-profile img {
-                filter: brightness(0%);
-            }
-
-            .section-chef-expert .card-profile {
-                background: transparent;
-                border-radius: 24px;
-            }
-        </style>
         <div class="container py-5 mt-5">
             <div class="row p-4">
                 <div class="col-6 px-5">
@@ -647,8 +351,7 @@
                     <div class="card-restaurant-chef d-flex align-items-center p-4">
                         <div class="d-flex gap-3 content p-4">
 
-                            <img src="images/image-popular-2.png" alt="image" width="90" height="120"
-                                class="image-restaurat-chef">
+                            <img src="images/image-popular-2.png" alt="image" class="image-restaurat-chef">
 
                             <div class="details d-flex flex-column">
                                 <h6 class="text-regular text-grey-secondary fs-16">Chef at restaurant</h6>
@@ -662,8 +365,8 @@
                     </div>
                 </div>
 
-                <div class="col-6 px-5">
-                    <div class="ms-3">
+                <div class="col-6 ps-5">
+                    <div class="ms-5">
                         <h6 class="text-uppercase text-semibold text-blue title fs-18">Top 4 Expert Chefs</h6>
                         <h4 class="text-semibold text-black-primary fs-32 ">Expert Chefs in Fuddy</h4>
 
